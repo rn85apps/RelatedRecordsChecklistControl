@@ -1,0 +1,72 @@
+.RN\.RelatedRecordsChecklist * {
+    box-sizing: border-box;
+  }
+  
+  .RN\.RelatedRecordsChecklist .checklist {
+    font-family: 'Segoe UI', 'Segoe UI Web (West European)', 'Segoe UI', -apple-system,
+      BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+  }
+  
+  .RN\.RelatedRecordsChecklist .checklist--rowitem {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-areas:
+      'checkbox displayName'
+      'checkbox context'
+      '. alert';
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 10px;
+  }
+  
+  .RN\.RelatedRecordsChecklist .checklist--rowitem .grid-checkbox {
+    grid-area: checkbox;
+    align-self: center;
+  }
+  
+  .RN\.RelatedRecordsChecklist .checklist--rowitem .grid-displayName {
+    grid-area: displayName;
+    align-self: end;
+  }
+  
+  .RN\.RelatedRecordsChecklist .checklist--rowitem .grid-context {
+    grid-area: context;
+    align-self: start;
+    font-size: 0.9em;
+  }
+  
+  .RN\.RelatedRecordsChecklist .checklist--rowitem .grid-alert {
+    grid-area: alert;
+    align-self: center;
+  }
+  
+  .RN\.RelatedRecordsChecklist .checklist--rowitem:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .RN\.RelatedRecordsChecklist .checklist--rowitem--viewdetails {
+    color: rgb(0, 120, 212);
+    outline: none;
+    text-decoration: none;
+  }
+  
+  .RN\.RelatedRecordsChecklist .checklist--rowitem--viewdetails:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .RN\.RelatedRecordsChecklist .checklist--footer {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
