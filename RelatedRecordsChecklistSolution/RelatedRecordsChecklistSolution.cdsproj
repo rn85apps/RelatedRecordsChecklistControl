@@ -17,7 +17,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <SolutionPackageType>Managed</SolutionPackageType>
+    <SolutionPackageType>Both</SolutionPackageType>
   </PropertyGroup>
 
   <!-- Solution Packager overrides, un-comment to use: SolutionPackagerType (Managed, Unmanaged, Both)
